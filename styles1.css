@@ -1,0 +1,109 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    padding:20px;
+}
+
+/* Navbar - Mobile First */
+nav{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+nav a{
+    text-decoration:none;
+    background-color:black;
+    color:white;
+    padding:10px;
+    text-align:center;
+}
+
+/* Desktop Navbar */
+@media (min-width:768px){
+    nav{
+        flex-direction:row;
+        gap:20px;
+    }
+}
+
+h1{
+    margin-bottom:20px;
+}
+
+/* Image */
+img{
+    width:300px;
+    max-width:100%;
+    border-radius:50px; /* Change to 20px if roll no is odd */
+    margin-bottom:20px;
+}
+
+/* Video */
+video{
+    width:50vw;
+    background-color:rgb(170, 0, 255); /* Change according to roll no */
+    padding:15px;
+    margin-bottom:20px;
+}
+
+/* Table */
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-bottom:20px;
+}
+
+th, td{
+    border:1px solid black;
+    padding:10px;
+    text-align:center;
+}
+
+th{
+    background-color:lightgray;
+}
+
+/* Button */
+button{
+    background-color:rgb(149, 0, 255); /* Same as video */
+    color:white;
+    border:none;
+    padding:12px 20px;
+    margin:20px 0;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    opacity:0.8;
+    transform:scale(1.05);
+}
+
+/* Grid - Desktop First */
+.grid-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:10px;
+    margin-top:20px;
+}
+
+.grid-item{
+    background-color:lightblue;
+    border:1px solid black;
+    padding:20px;
+    text-align:center;
+}
+
+/* Mobile Grid */
+@media (max-width:767px){
+    .grid-container{
+        grid-template-columns:repeat(2,1fr);
+    }
+}

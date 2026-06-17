@@ -1,0 +1,167 @@
+ p{
+    font-size: xx-large;
+    font-weight: bolder;
+} 
+
+h1{
+    padding: 20px;
+    border: 20px solid green;
+    margin: 20px;
+}
+
+
+video{
+    height: auto;
+    width: 100%;
+}
+
+.imgvideo{
+    background-color: aquamarine;
+    padding: 20px;
+}
+
+#p1{
+    font-width: 500px;
+    font-style: italic;
+}
+
+#p2{
+    font-width: 500px;
+    font-style: italic;
+}
+
+ol{
+    list-style-type: upper-roman;
+}
+
+ul{
+    list-style-type: circle;
+}
+
+table,td,th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th{
+    background-color: azure;
+}
+
+button{
+    background-color: bisque;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px;
+}
+
+button:hover{
+    background-color: brown;
+}
+
+h1:hover{
+    color: blue;
+}
+
+form{
+    height: 500px;
+    width: 25%; 
+    background-color: darkgoldenrod;
+    padding: 50px;
+    border-radius: 100px;
+}
+
+
+#One{
+    /* grid-row: 1/2; */
+    background-color: aquamarine;
+    height: 50px;
+}
+
+#Two{
+    /* grid-row: 1/2; */
+    background-color:black;
+    height: 50px;
+}
+
+#Three{
+    /* grid-row: 1/2; */
+    background-color:beige;
+    height: 50px;
+}
+
+#Four{
+    /* grid-row: 2/2; */
+    background-color:blue;
+    height: 50px;
+}
+
+#Five{
+    /* grid-row: 2/2; */
+    background-color:brown;
+    height: 50px;
+}
+
+#Six{
+    /* grid-row: 2/2; */
+    background-color:chocolate;
+    height: 50px;
+}
+
+.festivals{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+img{
+    height: 500px;
+    width: 500px;
+    background-color: black;
+    padding: 100px;
+}
+
+
+nav{
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media(min-width: 1024){
+    nav{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
+}
+
+.grid{
+    display: grid;
+    /* width: 100%;
+    grid-template-columns: 33% 33% 33%; */
+}
+
+
+/* FOR LAPTOP OR TAB */
+
+/* @media(min-width: 1024px){
+    img{
+        height: 500px;
+        width: 500px;
+        background-color: black;
+        padding: 100px;
+
+    }
+} */
+
+/* FOR MOBILES */
+
+/* @media(max-width: 600px){
+    img{
+        height: auto;
+        width: 100%;
+    }
+} */
